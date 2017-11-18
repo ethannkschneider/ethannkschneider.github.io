@@ -3807,6 +3807,11 @@
   /*Custom CSS*/
   #project-1, #project-2, #project-3 {
     height: 150px;
-    width: 175px;
+    width: 250px;
     border: 3px solid #000;
+    image-rendering: -moz-crisp-edges;         /* Firefox */
+    image-rendering:   -o-crisp-edges;         /* Opera */
+    image-rendering: -webkit-optimize-contrast;/* Webkit (non-standard naming) */
+    image-rendering: crisp-edges;
+    -ms-interpolation-mode: nearest-neighbor;  /* IE (non-standard property) */
   }
